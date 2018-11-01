@@ -27,6 +27,8 @@ public class User {
 
     private Calendar created = Calendar.getInstance();
 
+    private String secret;
+
     public Long getId() {
         return id;
     }
@@ -67,6 +69,14 @@ public class User {
         this.created = created;
     }
 
+    public String getSecret() {
+        return secret;
+    }
+
+    public void setSecret(String secret) {
+        this.secret = secret;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -75,6 +85,7 @@ public class User {
                 ", password='" + password + '\'' +
                 ", passwordConfirmation='" + passwordConfirmation + '\'' +
                 ", created=" + created +
+                ", secret='" + secret + '\'' +
                 '}';
     }
 }

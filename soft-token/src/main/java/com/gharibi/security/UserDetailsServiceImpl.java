@@ -15,7 +15,7 @@ import java.util.Arrays;
 import java.util.Collection;
 
 @Transactional
-@Service
+@Service("userDetailsService")
 public class UserDetailsServiceImpl implements UserDetailsService {
 
     private static final String ROLE_USER = "ROLE_USER";
